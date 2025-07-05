@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Looped+Thai+UI:wght@400;600;700&display=swap');
 body {
   background-color: #F4F2E6;
 }
@@ -71,4 +72,387 @@ body {
   margin-top: -30px;
 }
 
+.about {
+  background-color: #657961;
+  margin-top: 8%;
+  padding: 45px 0px 100px 0px;
+}
 
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  gap: 30px;
+}
+
+.header h1 {
+  font-size: 4.7rem;
+  font-weight: 600;
+}
+
+.header h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  align-self: center;
+}
+
+.about p {
+  color: white;
+  font-family: 'Inter', serif;
+  text-align: center;
+  margin: 0% 9%;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.fun-facts {
+  display: flex;
+  margin: 6% 0% 6% 0%;
+  justify-content: center;
+  gap: 10%;
+}
+
+.box {
+  width: 290px;
+  height: 270px;
+  background-color: #9E9E8F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-content p {
+  color: white;
+  background-color: #9E9E8F;
+  text-align: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  max-width: 250px;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  text-wrap: wrap;
+  height: 20px;
+}
+
+.box-content img {
+  width: 250px;
+  height: 230px;
+}
+
+.left {
+  font-size: 19px;
+}
+
+.center {
+  font-size: 22px;
+}
+
+.right {
+  font-size: 17px;
+}
+
+.coding-journey {
+  background-color: #444E42;
+  color: white;
+  justify-items: center;
+  font-family: 'Kumbh Sans', serif;
+  padding: 2% 0% 8% 0%;
+}
+
+.coding-journey h1 {
+  font-weight: 600;
+  font-size: 4.2rem;
+}
+
+
+.circles {
+  display: flex;
+  color: #2F2F2F;
+  font-family: 'Inter', serif;
+  font-weight: 600;
+  gap: 20px;  
+}
+
+.small-circle {
+  background-color: #F9E31A;
+  border-radius: 50%;
+  height: 26px;
+  width: 26px;
+  align-self: center;
+}
+
+.yellow {
+  background-color: #D3A761;
+  width: 150px;
+  height: 140px;
+  align-content: center;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  position: relative;
+}
+
+.circle-wrapper-yellow, .circle-wrapper-pink, .circle-wrapper-purple, .circle-wrapper-green, .circle-wrapper-white{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-wrapper-yellow::before {
+  content: "";
+  position: absolute;
+  top: 47px;
+  left: 5px;
+  width: calc(78% + 18px);
+  height: calc(60% + 20px);
+  border-radius: 50%;
+  border: 2.5px dotted #EFC685;
+  gap: 4px;
+}
+
+.pink {
+  background-color: #C47E6E;
+  width: 200px;
+  height: 190px;
+  align-content: center;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.circle-wrapper-pink::before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: 43px;
+  width: calc(50% + 20px);
+  height: calc(125% + 20px);
+  border-radius: 50%;
+  border: 2.5px dotted #F5846A;
+  transform: rotate(35deg);
+}
+
+.pink p {
+  font-size: 1.8rem;
+  width: 90px;
+  justify-self: center;
+}
+
+.bigger-text {
+  font-size: 2rem;
+}
+
+.purple {
+  background-color: #A68A94;
+  width: 150px;
+  height: 140px;
+  align-content: center;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle-wrapper-purple::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 5px;
+  width: calc(85% + 10px);
+  height: calc(70% + 20px);
+  border-radius: 50%;
+  border: 2.5px dotted #FF94BA;
+}
+
+.purple p {
+  font-size: 1.2rem;
+  width: 90px;
+  justify-self: center;
+}
+
+.green {
+  background-color: #9E9E8F;
+  width: 200px;
+  height: 190px;
+  align-content: center;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  position: relative; 
+}
+
+.green p {
+  font-size: 1.2rem;
+  width: 120px;
+  justify-self: center;
+}
+
+.circle-wrapper-green::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -13px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  border-radius: 50%;
+  border: 2.5px dotted #C6C6BE;
+}
+
+.white {
+  background-color: #FFFEFC;
+  width: 150px;
+  height: 140px;
+  align-content: center;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle-wrapper-white::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 40px;
+  width: calc(75% + 20px);
+  height: calc(85% + 20px);
+  border-radius: 50%;
+  border: 2.5px dotted #C6C6BE;
+}
+
+.white p {
+  font-size: 1rem;
+  width: 120px;
+  justify-self: center;
+}
+
+.coding-journey h3 {
+  color: white;
+}
+
+.first-circle h3 , .first-circle .small-circle {
+  display: flex;
+  justify-self: center;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.first-circle .small-circle , .third-circle .small-circle, .last-circle .small-circle{
+  margin-bottom: 10%;
+}
+
+
+.second-circle .small-circle , .fourth-circle .small-circle{
+  margin-top: 10%;
+}
+
+
+.second-circle h3 , .second-circle .small-circle {
+  display: flex;
+  justify-self: center;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.third-circle h3 , .third-circle .small-circle {
+  display: flex;
+  justify-self: center;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.fourth-circle h3 , .fourth-circle .small-circle {
+  display: flex;
+  justify-self: center;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.last-circle h3 , .last-circle .small-circle {
+  display: flex;
+  justify-self: center;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.middle {
+  transform: translateY(155%);
+}
+
+.second-circle, .fourth-circle {
+  transform: translateY(30%);
+}
+
+
+.my-favorite h1 {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 700;
+  font-size: 4.3rem;
+  justify-self: center;
+}
+
+
+
+.songs {
+  background-color: #657961;
+  border-radius: 38px;
+  width: 330px;
+  height: 450px;
+  justify-items: center;
+}
+
+.songs-content {
+  justify-items: center;
+}
+
+.songs-content h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.image-background img {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 25px;
+  padding: 20px;
+  height: 210px;
+  box-shadow: 1px 3px 1px rgba(83, 82, 82, 0.623);
+  width: 220px;
+  margin-top: 10%;
+}
+
+.title {
+  font-family: 'Noto Looped Thai UI', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 14px;
+  border-radius: 25px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 1px 3px 1px rgba(83, 82, 82, 0.623);
+}
+
+.controls {
+  display: flex;
+  gap: 28px;
+}
+
+.prev, .play, .next {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  box-shadow: 1px 3px 1px rgba(71, 70, 70, 0.977);
+}
+
+.prev:hover, .play:hover, .next:hover {
+  background-color: rgba(174, 172, 172, 0.25);
+  transform: translateY(2px);
+}
+
+.prev img, .play img, .next img{
+  height: 35px;
+  width: 40px;
+  padding: 10px;
+}
