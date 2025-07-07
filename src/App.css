@@ -34,7 +34,8 @@ body {
 }
 
 .pfp {
-  height: 400px;
+  width: clamp(100px, 30vw, 300px);
+  height: clamp(200px, 40vw, 400px);
   border-radius: 60px;
   position: relative;
   z-index: 2;
@@ -77,13 +78,13 @@ body {
 .text-right h1 {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 900;
-  font-size: 5.5rem;
+  font-size: clamp(4rem, 7vw, 5.4rem);
 }
 
 .text-right h2 {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 600;
-  font-size: 4.4rem;
+  font-size: clamp(2rem, 5vw, 4.6rem);
 }
 
 .first-name {
@@ -93,6 +94,8 @@ body {
 .last-name {
   margin-top: -30px;
 }
+
+/* About Section */
 
 .about {
   background-color: #657961;
@@ -176,6 +179,8 @@ body {
 .right {
   font-size: 17px;
 }
+
+/* Coding Journey Section */
 
 .coding-journey {
   background-color: #444E42;
@@ -408,7 +413,7 @@ body {
   transform: translateY(30%);
 }
 
-
+/* Favorites Section */
 .my-favorite h1 {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 700;
@@ -428,6 +433,8 @@ body {
   display: flex;
   gap: 50px;
 }
+
+/* Songs Section */
 
 .songs {
   background-color: #657961;
@@ -493,6 +500,8 @@ body {
   width: 42px;
   padding: 5px;
 }
+
+/* Books Section */
 
 .books {
   background-color: #4E3737;
@@ -561,6 +570,9 @@ body {
   background-color: rgba(174, 172, 172, 0.25);
   transform: translateY(2px);
 }
+
+
+/* Show/Movies Section */
 
 .shows-movies {
   background-color: #657961;
@@ -727,6 +739,7 @@ body {
   gap: 6%;
 }
 
+/* Food Section */
 .food {
   display: flex;
   flex-direction: column;
@@ -735,7 +748,7 @@ body {
   border-radius: 40px;
   padding: 3% 12%;
   justify-items: center;
-  gap: 18px;
+  gap: clamp(1rem, 2vw, 3rem);
   width: 70%;
 }
 
@@ -768,6 +781,8 @@ body {
   align-self: center;
 }
 
+/* Detail Section */
+
 .main-squiggle-left, .main-squiggle-right, .fact-squiggle-right, .fact-squiggle-left {
   position: absolute;
 }
@@ -792,3 +807,64 @@ body {
   bottom: -895px;
 }
 
+@media (max-width: 480px) {
+  /* Styles for small screens */
+}
+
+/* Tablets (portrait) */
+@media (max-width: 481px) {
+  /* Styles for tablets */
+  
+}
+
+/* Tablets (landscape) and small desktops */
+@media (max-width: 769px) {
+  /* Styles for medium screens */
+  .header h2 {
+    display: none;
+  }
+
+  .fun-facts {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+
+  .coding-journey h1 {
+    text-align: center;
+  }
+
+  .circles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-header {
+    text-align: center;
+  }
+}
+
+/* Large desktops */
+@media (max-width: 1025px) {
+  /* Styles for large screens */
+  
+
+}
+
+/* Extra large desktops */
+@media (max-width: 1201px) {
+  .main-squiggle-left, .main-squiggle-right, 
+  .fact-squiggle-right, .fact-squiggle-left,
+  .dark-green-wrapper::before, .light-green-wrapper::before,
+  .light-green, .dark-green {
+  display: none;
+  }
+
+  .pfp {
+    border-style: solid;
+    border-color: #444E42;
+    border-width: 35px;
+    border-radius: 80px;
+  }
+
+}
