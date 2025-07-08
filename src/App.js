@@ -20,11 +20,12 @@ import tsitp from "./assets/tsitp.png";
 import SpyxFamily from "./assets/spyxfamily.png";
 import tangled from "./assets/tangled.png";
 import eeaao from "./assets/eeaao.png";
-import sushi from "./assets/sushi.png";
 import taco from "./assets/taco.png";
 import ramen from "./assets/ramen.png";
 import goiCuon from "./assets/goi-cuon.png";
 import boba from "./assets/boba.png";
+import matcha from "./assets/matcha-tea.png";
+import coffee from "./assets/coffee-cup.png";
 import mainLeft from "./assets/main-left.png";
 import mainRight from "./assets/main-right.png";
 import factLeft from "./assets/fact-left.png";
@@ -174,7 +175,7 @@ function App() {
 
           <div className="first-circle">
             <h3>2021</h3>
-            <div className="small-circle"></div>
+            <div className="small-circle inside-circle"></div>
             <div className="circle-wrapper-yellow">
               <div className="colored-circle yellow">
                 <p>first time coding</p>
@@ -190,7 +191,7 @@ function App() {
                 <p>first <span className="bigger-text">KWK camp</span></p>
               </div>
             </div>
-            <div className="small-circle"></div>
+            <div className="small-circle inside-circle"></div>
             <h3>2022</h3>
           </div>
           
@@ -199,7 +200,7 @@ function App() {
 
           <div className="third-circle">
             <h3>2023</h3>
-            <div className="small-circle"></div>
+            <div className="small-circle inside-circle"></div>
             <div className="circle-wrapper-purple">
               <div className="colored-circle purple">
                 <p>started CS at Georgia Tech</p>
@@ -215,7 +216,7 @@ function App() {
                 <p>first hackathon, began working on projects</p>
               </div>
             </div>
-            <div className="small-circle"></div>
+            <div className="small-circle inside-circle"></div>
             <h3>2024</h3>
           </div>
           
@@ -224,7 +225,7 @@ function App() {
           
           <div className="last-circle">
             <h3>current</h3>
-            <div className="small-circle"></div>
+            <div className="small-circle inside-circle"></div>
             <div className="circle-wrapper-white">
               <div className="colored-circle white">
                 <p>learning React and building personal projects</p>
@@ -316,55 +317,71 @@ function App() {
             <h2 className="shows-movies-header">SHOWS/ MOVIES</h2>
           </div>
           </div>
-          <div className="food-content">
-            <h2 className="food-heading">FOOD</h2>
-            <div className="food">
-              <div className="sushi">
-                <img src={sushi}/>
-                <div className="food-descript">
-                  <h2>SUSHI</h2>
-                  <p>a Japanese dish made with seaweed, 
-                    vinegared rice, raw or cooked seafood, 
-                    and other ingredients 
-                  </p>
+          <div className="right-side-content">
+            <div className="food-content">
+              <h2 className="food-heading">FOOD</h2>
+              <div className="food">
+                
+                <div className="tacos">
+                  <img src={taco}/>
+                  <div className="food-descript">
+                    <h2>BIRRIA TACOS</h2>
+                    <p>Mexican tacos filled with slow-cooked, 
+                      spiced meat served with a rich dipping broth
+                    </p>
+                  </div>
+                </div>
+                <div className="ramen">
+                  <img src={ramen}/>
+                  <div className="food-descript">
+                    <h2>RAMEN</h2>
+                    <p>a Japanese noodle soup made with a savory broth, 
+                      chewy noodles, and toppings like meat, eggs, and veggies
+                    </p>
+                  </div>
+                </div>
+                <div className="goi-cuon">
+                  <img src={goiCuon}/>
+                  <div className="food-descript">
+                    <h2>GOI CUON</h2>
+                    <p>Vietnamese fresh rolls filled with shrimp, veggies, and noodles, wrapped in rice paper 
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="tacos">
-                <img src={taco}/>
-                <div className="food-descript">
-                  <h2>BIRRIA TACOS</h2>
-                  <p>Mexican tacos filled with slow-cooked, 
-                    spiced meat served with a rich dipping broth
-                  </p>
+            </div>
+            <div className="drinks-content">
+              <div className="drinks">
+                <div className="boba">
+                  <img src={boba}/>
+                  <div className="food-descript">
+                    <h2>BOBA</h2>
+                    <p>a Taiwanese drink made with tea, 
+                      milk, and chewy tapioca pearls
+                    </p>
+                  </div>
+                </div>
+                <div className="boba">
+                  <img src={matcha}/>
+                  <div className="food-descript">
+                    <h2>MATCHA LATTE</h2>
+                    <p>a smooth and earthy blend of ceremonial green 
+                      tea and steamed milk
+                    </p>
+                  </div>
+                </div>
+                <div className="boba">
+                  <img src={coffee}/>
+                  <div className="food-descript">
+                    <h2>ICED COFFEE</h2>
+                    <p>a bold, chilled brew served over ice, perfect 
+                      for keeping you refreshed and energized all 
+                      day long
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="ramen">
-                <img src={ramen}/>
-                <div className="food-descript">
-                  <h2>RAMEN</h2>
-                  <p>a Japanese noodle soup made with a savory broth, 
-                    chewy noodles, and toppings like meat, eggs, and veggies
-                  </p>
-                </div>
-              </div>
-              <div className="goi-cuon">
-                <img src={goiCuon}/>
-                <div className="food-descript">
-                  <h2>GOI CUON</h2>
-                  <p>Vietnamese fresh rolls filled with shrimp, 
-                    herbs, veggies, and noodles, wrapped in rice paper 
-                  </p>
-                </div>
-              </div>
-              <div className="boba">
-                <img src={boba}/>
-                <div className="food-descript">
-                  <h2>BOBA</h2>
-                  <p>a Taiwanese drink made with tea, 
-                    milk, and chewy tapioca pearls
-                  </p>
-                </div>
-              </div>
+              <h2 className="food-heading">DRINKS</h2>
             </div>
           </div>
         </div>

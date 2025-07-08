@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
 body {
   background-color: #F4F2E6;
+  overflow-x: hidden;
 }
 
 .intro {
@@ -34,8 +35,8 @@ body {
 }
 
 .pfp {
-  width: clamp(100px, 30vw, 300px);
-  height: clamp(200px, 40vw, 400px);
+  width: clamp(50px, 30vw, 300px);
+  height: clamp(300px, 40vw, 400px);
   border-radius: 60px;
   position: relative;
   z-index: 2;
@@ -79,12 +80,14 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 900;
   font-size: clamp(4rem, 7vw, 5.4rem);
+  text-align: center;
 }
 
 .text-right h2 {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 600;
   font-size: clamp(2rem, 5vw, 4.6rem);
+  text-align: center;
 }
 
 .first-name {
@@ -113,7 +116,7 @@ body {
 }
 
 .header h1 {
-  font-size: 4.7rem;
+  font-size: clamp(4rem,5vw,4.7rem);
   font-weight: 600;
 }
 
@@ -128,7 +131,7 @@ body {
   font-family: 'Inter', serif;
   text-align: center;
   margin: 0% 9%;
-  font-size: 1.5rem;
+  font-size: clamp(1rem,2vw,1.5rem);
   font-weight: 500;
 }
 
@@ -439,10 +442,9 @@ body {
 .songs {
   background-color: #657961;
   border-radius: 38px;
-  width: 330px;
-  height: 450px;
+  
   justify-items: center;
-  padding: 30px 30px 0px 30px;
+  padding: 50px 30px 50px 30px;
 }
 
 .songs-content {
@@ -457,11 +459,9 @@ body {
 .image-background img {
   background-color: #9E9E8F;
   border-radius: 25px;
-  padding: 20px;
-  height: 220px;
+  width: 270px;
+  padding: 25px;
   box-shadow: 1px 3px 1px rgba(83, 82, 82, 0.623);
-  width: 230px;
-  
 }
 
 .title {
@@ -505,13 +505,16 @@ body {
 
 .books {
   background-color: #4E3737;
-  height: 437px;
+  padding: 20px 30px 30px 30px;
   border-style: solid;
   border-color: #657961;
   border-width: 25px;
   border-radius: 50px;
   justify-items: center;
   min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .books h2 {
@@ -523,10 +526,11 @@ body {
 }
 
 .book-img {
-  width: 145px;
+  max-width: 160px;
   background-color: rgba(255, 255, 255, 0.25);
   padding: 20px;
   border-radius: 30px;
+  align-self: center;
 }
 
 .books-content h2 {
@@ -536,8 +540,9 @@ body {
 
 .bottom-arrows {
   display: flex;
-  gap: 40px;
+  gap: 60px;
   margin-top: 15px;
+  align-self: center;
 }
 
 .left {
@@ -576,11 +581,12 @@ body {
 
 .shows-movies {
   background-color: #657961;
-  padding: 30px 20px;
+  padding: 50px 20px;
   display: flex;
-  border-radius: 30px;
+  border-radius: 50px;
   gap: 6%;
   margin-top: 2%;
+  justify-content: center;
 }
 
 
@@ -597,7 +603,7 @@ body {
   background-color: #444e4248;
   color: white;
   padding: 25px;
-  width: 340px;
+  width: 85%;
   border-radius: 50px;
   font-size: 1.4rem;
   text-align: center;
@@ -605,8 +611,8 @@ body {
 }
 
 .show-info img {
-  width: 370px;
-  height: 230px;
+  width: 100%;
+  height: 110%;
   border-radius: 30px;
   margin-top: 15px;
 }
@@ -614,10 +620,10 @@ body {
 .remote {
   background-color: #89A583;
   border-radius: 50px;
-  width: 220px;
-  padding: 5px 5px 15px 5px;
+  padding: 5px 15px 15px 15px;
   box-shadow: 1px 7px 4px #50604c;
   justify-items: center;
+
 }
 
 .power {
@@ -737,6 +743,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 6%;
+  margin: 2%;
 }
 
 /* Food Section */
@@ -758,7 +765,7 @@ body {
 }
 
 .food h2 {
-  font-size: 1.6rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
 }
@@ -767,7 +774,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 400;
   max-width: 380px;
-  font-size: 0.9rem;
+  font-size: clamp(1rem, 1vw, 1rem);
   line-height: 23px;
 }
 
@@ -777,10 +784,44 @@ body {
 }
 
 .sushi img, .tacos img, .ramen img, .goi-cuon img, .boba img {
-  height: 95px;
+  height: clamp(80px, 2vw, 155px);
+  width: auto;
   align-self: center;
 }
 
+/* Drinks Section */
+.drinks {
+  display: flex;
+  flex-direction: column;
+  background-color: #657961;
+  color: white;
+  border-radius: 40px;
+  padding: 3% 12%;
+  justify-items: center;
+  gap: 1rem;
+  width: 70%;
+}
+
+.drinks h2 {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+}
+
+.drinks p {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  max-width: 380px;
+  font-size: clamp(1rem, 1vw, 1rem);
+  line-height: 23px;
+}
+
+/* Right Side Content Section */
+.right-side-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 /* Detail Section */
 
 .main-squiggle-left, .main-squiggle-right, .fact-squiggle-right, .fact-squiggle-left {
@@ -824,30 +865,101 @@ body {
     display: none;
   }
 
+  .coding-journey h1 {
+    text-align: center;
+  }
+
+  .top-header {
+    text-align: center;
+  }
+
+  .shows-movies {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    padding: 50px;
+  }
+
+  .show-info {
+    width: 95%;
+  }
+
+  .show-info h2 {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .remote {
+    width: 60%;
+    align-self: center;
+    margin-top: 2%;
+    padding: 20px;
+  }
+
+  .top-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 10px;
+  }
+
+  .intro h2 {
+    font-size: 3rem;
+  }
+
+  .intro h1 {
+    font-size: 4rem;
+  }
+
+  .fun-facts p {
+    font-size: 16px;
+  }
+
+}
+
+/* Large desktops */
+@media (max-width: 1025px) {
+  /* Styles for large screens */
   .fun-facts {
     display: flex;
     flex-direction: column;
     justify-self: center;
   }
 
-  .coding-journey h1 {
-    text-align: center;
-  }
-
   .circles {
     display: flex;
+    gap: 35px;
     flex-direction: column;
   }
 
-  .top-header {
-    text-align: center;
+  .inside-circle div {
+    display: none;
   }
-}
 
-/* Large desktops */
-@media (max-width: 1025px) {
-  /* Styles for large screens */
-  
+  .books {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .remote {
+    width: 60%;
+  }
+
+
+  .intro h2 {
+    font-size: 4rem;
+  }
+
+  .intro h1 {
+    font-size: 5rem;
+  }
 
 }
 
@@ -856,15 +968,65 @@ body {
   .main-squiggle-left, .main-squiggle-right, 
   .fact-squiggle-right, .fact-squiggle-left,
   .dark-green-wrapper::before, .light-green-wrapper::before,
-  .light-green, .dark-green {
+  .light-green, .dark-green{
   display: none;
   }
 
   .pfp {
     border-style: solid;
     border-color: #444E42;
-    border-width: 35px;
+    border-width: 30px;
     border-radius: 80px;
+    margin: none;
+    justify-content: center;
+    left: 0;
+    width: 280px;
+    height: 370px;
+    top: 10px;;
+    justify-self: center ;
   }
 
+  .intro {
+    margin: 0;
+  }
+
+  .left-side-things {
+    align-content: center;
+    margin: 0 auto;
+  }
+
+  .favorites-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shows-movies {
+    padding: 50px;
+    margin: 0 auto;
+    width: 60%;
+  }
+
+
+  .food, .drinks {
+    margin: 0 auto;
+    padding: 50px;
+  }
+
+
+  .shows-movies-header {
+    justify-self: center;
+  }
+
+  .text-right {
+    margin: auto 0;
+  }
+
+
+
+}
+
+@media (max-width: 1400px) {
+  .right-side-things {
+    display: flex;
+  }
 }
